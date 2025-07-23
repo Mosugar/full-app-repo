@@ -81,16 +81,7 @@ const Header = () => {
           </ul>
 
           {/* Mobile Contact Info */}
-          <div className="mobile-contact">
-            <div className="mobile-contact-item">
-              <span className="contact-icon">📞</span>
-              <span>06 17 86 90 01</span>
-            </div>
-            <div className="mobile-contact-item">
-              <span className="contact-icon">📧</span>
-              <span>contact@tlglobal.ma</span>
-            </div>
-          </div>
+       
         </nav>
 
         {/* Action Buttons */}
