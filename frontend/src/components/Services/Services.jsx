@@ -116,18 +116,21 @@ const Services = () => {
             {services.map((service, index) => (
               <button
                 key={service.id}
-                className={`nav-item ${activeService === index ? 'active' : ''}`}
+                className={`services-nav-item ${activeService === index ? 'active' : ''}`}
+
                 onClick={() => setActiveService(index)}
                 style={{ '--accent-color': service.color }}
               >
-                <div className="nav-icon">
+                <div className="services-nav-icon">
+
                   <span>{service.icon}</span>
                 </div>
-                <div className="nav-content">
-                  <h3 className="nav-title">{service.title}</h3>
-                  <p className="nav-subtitle">{service.subtitle}</p>
+                <div className="services-nav-content">
+                <h3 className="services-nav-title">{service.title}</h3>
+
+                <p className="services-nav-subtitle">{service.subtitle}</p>
                 </div>
-                <div className="nav-indicator"></div>
+                <div className="services-nav-indicator"></div>
               </button>
             ))}
           </div>
@@ -169,11 +172,11 @@ const Services = () => {
                 className="service-cta"
                 style={{ '--accent-color': services[activeService].color }}
               >
-                <span>Découvrir ce service</span>
-                <svg viewBox="0 0 24 24" fill="none">
+                 <span>Découvrir ce service</span> 
+                 <svg viewBox="0 0 24 24" fill="none">
                   <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2"/>
-                </svg>
-              </button>
+                </svg> 
+              </button> 
             </div>
           </div>
 
